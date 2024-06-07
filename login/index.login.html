@@ -6,12 +6,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <tatle>LOL 메인화면</tatle>
-      <script type="text/javascript" src="js/test.js"> </script>
-      <script type="text/javascript" src="JS/search.js" defer> </script>
-      <script type="text/javascript" src="JS/data_type.js"> </script>
-      <script type="text/javascript" src="js/pop_up.js"> </script>
-      <script type="text/javascript" src="js/popup_close.js"></script>
-      
+    
     
 
 
@@ -35,12 +30,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"> defer </script>
 
 
+    <script src="../js/login.js" defer> </script>
+    <script src='../js/login2.js' defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 
     </head>
     
 
-    <body style="background-color: black;" onload="pop_up();" > 
+    <body style="background-color: black;" onload="init_logined();" > 
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -92,8 +91,7 @@
           <button class="btn btn-outline-success" id="searc_btn" type="submit">검색하기</button>
 
           <a href="login/login.html" class="btn btn-outline-success" id="login_btn">로그인 하기</a>
-          <button class="btn btn-outline-success" type="submit" onclick="location.href='join.html'">회원가입</button>
-
+          <a href="login/logout.html" class="btnbtn-outline-success" id="logout_btn">로그아웃하기</a>
         </form>
 
       </div>
@@ -117,34 +115,31 @@
 
             
         </div>
-        <div style="display: flex; justify-content: center;">
-          <table border="1">
-              <caption>인기캐릭터</caption>
-              <tbody>
-              <tr bgcolor="red">
-              <td width="80" rowspan="2">사이온</td>
-              <td>아리</td>
-              <td>가렌</td>
-              <td>가렌2</td>
-              <td>가렌3</td>
-              </tr>
-              <tr bgcolor="grey">
-              <td colspan="7"><a href="https://www.leagueoflegends.com/ko-kr/" target="_blank"> 롤 웹사이트 접속하기 </a></td>
-      <!-- <td> 태그가 열리고 닫히는 사이에 링크를 추가하여 "롤 웹사이트 접속하기"라는 텍스트가 링크가 되도록 하였습니다.-->
-              <tr>
-              <td bgcolor="blue"><b>카직스</b></td>
-              <td>루시안</td>
-              <td>루시안2</td>
-              <td colspan="2"><img src="IMAGE/바이1.png" width="100" height="50"> <font size="13">바이1, 2</font></td>
-              </tr>
-              </tbody>
-              </table>
-              </div>
         <hr>
         <div style="display: flex; justify-content: center;">
         <h3 style="font-size: 24px; font-weight: bold; font-style: italic; color: white; font-family: '굴림';">라이엇 게임 회사 정보 2024x월 작성됨</h3>
     </div>
-   
+    <table border="1">
+        <caption>인기캐릭터</caption>
+        <tbody>
+        <tr bgcolor="red">
+        <td width="80" rowspan="2">사이온</td>
+        <td>아리</td>
+        <td>가렌</td>
+        <td>가렌2</td>
+        <td>가렌3</td>
+        </tr>
+        <tr bgcolor="grey">
+        <td colspan="7"><a href="https://www.leagueoflegends.com/ko-kr/" target="_blank"> 롤 웹사이트 접속하기 </a></td>
+<!-- <td> 태그가 열리고 닫히는 사이에 링크를 추가하여 "롤 웹사이트 접속하기"라는 텍스트가 링크가 되도록 하였습니다.-->
+        <tr>
+        <td bgcolor="blue"><b>카직스</b></td>
+        <td>루시안</td>
+        <td>루시안2</td>
+        <td colspan="2"><img src="IMAGE/바이1.png" width="100" height="50"> <font size="13">바이1, 2</font></td>
+        </tr>
+        </tbody>
+        </table>
        
     </body>
 </html>
