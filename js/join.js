@@ -52,7 +52,7 @@ function join(){ // 회원가입
   }
   else
   {
-    session_join_set(); 
+    session_join_set(); // 회원가입 용 세션 생성 
         form.submit();
   }
 }
