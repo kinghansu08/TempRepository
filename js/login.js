@@ -38,7 +38,11 @@ addJavascript('/js/cookie.js'); // 쿠키 함수
     const hasUpperCase = passwordValue.match(/[A-Z]+/) !== null;
     const hasLowerCase = passwordValue.match(/[a-z]+/) !== null;
     if (emailValue.length < 5) {
-    alert('아이디는 최소 5글자 이상 입력해야 합니다.');
+    alert('이메일은 최소 5글자 이상 입력해야 합니다.');
+    return false;
+    }
+    if (emailValue.length > 10) {
+    alert('이메일은 10글자 이내로 작성해야 합니다.');
     return false;
     }
     if (passwordValue.length < 12) {
@@ -53,6 +57,7 @@ addJavascript('/js/cookie.js'); // 쿠키 함수
     alert('패스워드는대소문자를1개이상포함해야합니다.');
     return false;
     }
+   
     console.log('이메일:', emailValue);
     console.log('비밀번호:', passwordValue);
 
