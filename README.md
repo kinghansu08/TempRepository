@@ -20,12 +20,13 @@
 
     <meta name="author" content="20210975">
     <meta name="content" content="computer">
-    <base href="http://127.0.0.1:5500">
+    <!-- <base href="http://127.0.0.1:5500"> --> 
+    <!-- 위에 실행 안돼서 주석 단거야 정석은 주석달면 안됨 -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
 </head>
-<body style="background-color: black;" onload="pop_up();">
+<body style="background-color: black;" onload="pop_up();">lo
 
 <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
     <div class="container-fluid">
